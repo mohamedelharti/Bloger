@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Model\TimesTempedInterface;
 use App\Repository\PageRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
@@ -9,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: PageRepository::class)]
 class Page
 {
+
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
